@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutPage: React.FC = () => {
   return (
-    <main id="about" className="py-12 bg-blue-50">
+    <main id="about" className="py-12 bg-blue-100">
       <div className="container px-4 mx-auto">
         {/* About Section */}
         <aside className="max-w-4xl p-8 mx-auto mb-12 transition-transform duration-500 transform bg-white rounded-lg shadow-lg hover:scale-105 hover:shadow-xl">
