@@ -2,3 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+.modal {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-close-button {
+    background: #fdb740;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Transition for grid items */
+  aside {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  section:hover {
+    transform: translateY(-10px);
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
