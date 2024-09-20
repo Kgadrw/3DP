@@ -27,7 +27,7 @@ const WhoCanWeHelp: React.FC = () => {
         <article className="border shadow-md py-4 space-y-4 rounded-md cursor-pointer bg-[#122e46] group hover:bg-[#fdb740]">
           <img className="w-8/12 mx-auto" src={smbImage} alt="SMBs" />
           <h1 className="text-3xl text-[#fdb740] group-hover:text-gray-800 font-bold uppercase text-center tracking-wider">
-            SMBs
+            Small Businesses
           </h1>
           <p className="w-11/12 mx-auto text-center text-gray-200 group-hover:text-white">
             Small businesses have a lot of potential. The only restriction they
