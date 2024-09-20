@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-300 sm:text-center">
             © 2024
-            <a href="https://exec-rwanda.com" className="hover:underline">ExecTM Rwanda</a>. All Rights Reserved.
+            <a href="https://exec-rwanda.com" className="hover:underline">Data & Insights Partners</a>. All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0"></div>
         </div>
