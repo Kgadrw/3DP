@@ -2,6 +2,7 @@ import React from 'react';
 import VisualImage from '../assets/Visual.png';
 import DataAssessment from '../components/DataAssessment'; 
 import WhoCanWeHelp from '../components/WhoCanWeHelp';
+import Services from './Service';
 
 const HomePage: React.FC = () => {
   const handleScroll = (id: string) => {
@@ -48,6 +49,7 @@ const HomePage: React.FC = () => {
         </header>
       </main>
       <section id="data-assessment">
+        <Services />
         <DataAssessment />
       </section>
       <section id="who-can-we-help">
