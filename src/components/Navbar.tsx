@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 interface NavProps {
   logo: string;
@@ -23,7 +23,7 @@ const Nav: React.FC<NavProps> = ({ logo, links, onButtonClick, buttonText }) => 
   };
 
   const isActive = (href: string) => {
-    return location.pathname === href ? "border-b-4 border-[#fdb740]" : ""; // Add orange underline for active link
+    return location.pathname === href ? "border-b-4 border-[#fdb740]" : ""; 
   };
 
   useEffect(() => {
@@ -51,9 +51,9 @@ const Nav: React.FC<NavProps> = ({ logo, links, onButtonClick, buttonText }) => 
       id="navbar"
     >
       <div className="flex items-center mr-6 bg-white lo">
-        <a href="/" className="text-xl font-bold tracking-wider lo animate__animated animate__bounce">
+        <Link to="/" className="text-xl font-bold tracking-wider lo animate__animated animate__bounce">
           <img className="object-fill h-8" src={logo} alt="Logo" />
-        </a>
+        </Link>
       </div>
 
       {/* Search Bar */}
@@ -114,14 +114,14 @@ const Nav: React.FC<NavProps> = ({ logo, links, onButtonClick, buttonText }) => 
       <div className={`w-full block lg:flex gap-x-5 lg:items-center lg:w-auto transition-all duration-300 ${isMenuOpen ? "" : "hidden"}`} id="js-menu">
         <div className="grid text-sm gap-y-5 md:flex gap-x-5 lg:flex-grow">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
+              to={link.href}
               className={`nav-links links ${isActive(link.href)} hover:text-[#fdb740] transition-colors duration-300`} // Apply active styling
               onClick={closeMobileMenu}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           {buttonText && (
             <button

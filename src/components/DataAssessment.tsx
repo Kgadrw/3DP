@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const DataAssessment: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <main className="bg-gradient-to-r from-[#122e46] via-[#122e46]/70 to-[#122e46]/80 pt-10">
       <h1 className="text-3xl text-center text-white ">
@@ -15,7 +22,7 @@ const DataAssessment: React.FC = () => {
               Limited use of data, primarily reacting to immediate needs or issues.
             </p>
             <button
-              id="myButton"
+              onClick={handleButtonClick}
               className="p-2 border w-11/12 center bottom-3 hover:ring ring-[#fdb740] rounded-md mx-auto bg-[#fdb740] text-white"
             >
               <span>Learn What Can you do?</span>
@@ -31,7 +38,7 @@ const DataAssessment: React.FC = () => {
               Foundational understanding of data's value, with employees equipped with basic data skills.
             </p>
             <button
-              id="myButton"
+              onClick={handleButtonClick}
               className="p-2 border w-11/12 center bottom-3 hover:ring ring-[#fdb740] rounded-md mx-auto bg-[#fdb740] text-white"
             >
               <span>
@@ -49,7 +56,7 @@ const DataAssessment: React.FC = () => {
               Established data infrastructure and governance, enabling systematic data utilization for decision-making.
             </p>
             <button
-              id="myButton"
+              onClick={handleButtonClick}
               className="p-2 border w-11/12 center bottom-3 hover:ring ring-[#fdb740] rounded-md mx-auto bg-[#fdb740] text-white"
             >
               <span>
@@ -67,7 +74,7 @@ const DataAssessment: React.FC = () => {
               Advanced expertise in data analytics and utilization, driving innovation and competitive advantage.
             </p>
             <button
-              id="myButton"
+              onClick={handleButtonClick}
               className="p-2 border w-11/12 center bottom-3 hover:ring ring-[#fdb740] rounded-md mx-auto bg-[#fdb740] text-white"
             >
               Ready to take action
