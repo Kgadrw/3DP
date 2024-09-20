@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="container px-4 mx-auto">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="/" className="text-xl font-bold">Data & Insights Partner</a>
+            <a href="/" className="text-xl font-bold">Data & Insights Partners</a>
           </div>
 
           <nav className="grid grid-cols-2 gap-6 sm:grid-cols-4">
