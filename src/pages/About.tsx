@@ -1,7 +1,13 @@
-import React from "react";
 import { MapPin, Users, Lightbulb, Headphones } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 
-const AboutPage: React.FC = () => {
+const AboutPage = () => {
   const features = [
     {
       title: "Expert Team",
@@ -24,89 +30,89 @@ const AboutPage: React.FC = () => {
   ];
 
   return (
-    <main
-      id="about"
-      className="min-h-screen bg-gradient-to-b from-blue-50 to-white"
-    >
-      {/* Top spacing to prevent navbar overlap */}
-      <div className="pt-24 lg:pt-28">
-        <div className="container px-4 mx-auto">
-          {/* About Section */}
-          <aside className="max-w-4xl p-8 mx-auto mb-16 transition-all duration-500 bg-white shadow-lg rounded-xl hover:shadow-2xl">
-            <div className="relative">
-              <h1 className="mb-8 text-4xl font-bold text-center text-blue-800">
-                Who We Are
-              </h1>
-              <div className="absolute w-24 h-1 transform -translate-x-1/2 bg-blue-500 -bottom-2 left-1/2"></div>
-            </div>
-            <div className="w-11/12 mx-auto mt-12 md:w-9/12">
-              <p className="text-xl leading-relaxed text-center text-gray-700">
-                We specialize in providing comprehensive services that empower
-                businesses to harness the full potential of their data. With a
-                focus on driving informed decision-making, we offer a range of
-                solutions designed to transform raw information into actionable
-                insights.
-              </p>
-            </div>
-          </aside>
+    <main className="min-h-screen pt-24 bg-gradient-to-b from-blue-50 to-background lg:pt-28">
+      <div className="container px-4 mx-auto space-y-16">
+        {/* About Section */}
+        <Card className="max-w-4xl mx-auto transition-shadow hover:shadow-lg">
+          <CardHeader>
+            <CardTitle className="relative pb-4 text-4xl text-center text-blue-800">
+              Who We Are
+              <div className="absolute bottom-0 w-24 h-1 transform -translate-x-1/2 bg-blue-500 left-1/2"></div>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="max-w-3xl mx-auto text-xl leading-relaxed text-center text-muted-foreground">
+              We specialize in providing comprehensive services that empower
+              businesses to harness the full potential of their data. With a
+              focus on driving informed decision-making, we offer a range of
+              solutions designed to transform raw information into actionable
+              insights.
+            </p>
+          </CardContent>
+        </Card>
 
-          {/* Features Section */}
-          <div className="mb-16">
-            <div className="relative mb-12">
-              <h2 className="text-3xl font-bold text-center text-blue-800">
-                Why Choose Us?
-              </h2>
-              <div className="absolute w-20 h-1 transform -translate-x-1/2 bg-blue-500 -bottom-2 left-1/2"></div>
-            </div>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="p-6 transition-all duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl hover:transform hover:scale-105"
-                >
-                  <div className="flex items-center mb-4">
-                    <div className="p-2 mr-4 text-blue-500 bg-blue-100 rounded-lg">
+        {/* Features Section */}
+        <section>
+          <div className="relative mb-12">
+            <h2 className="text-3xl font-bold text-center text-blue-800">
+              Why Choose Us?
+              <div className="absolute bottom-0 w-20 h-1 transform -translate-x-1/2 bg-blue-500 left-1/2 -bottom-2"></div>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature, index) => (
+              <Card
+                key={index}
+                className="transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105"
+              >
+                <CardHeader>
+                  <div className="flex items-center space-x-4">
+                    <div className="p-2 bg-blue-100 rounded-lg">
                       {feature.icon}
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-800">
-                      {feature.title}
-                    </h3>
+                    <CardTitle className="text-xl">{feature.title}</CardTitle>
                   </div>
-                  <p className="leading-relaxed text-gray-600">
+                </CardHeader>
+                <CardContent>
+                  <p className="leading-relaxed text-muted-foreground">
                     {feature.description}
                   </p>
-                </div>
-              ))}
-            </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
+        </section>
 
-          {/* Location Section */}
-          <div className="mb-16">
-            <div className="relative mb-12">
-              <h2 className="text-3xl font-bold text-center text-blue-800">
-                Find Us Here
-              </h2>
-              <div className="absolute w-20 h-1 transform -translate-x-1/2 bg-blue-500 -bottom-2 left-1/2"></div>
-            </div>
-            <div className="overflow-hidden bg-white shadow-lg rounded-xl">
-              <div className="flex items-center p-4 bg-blue-50">
-                <MapPin className="w-6 h-6 mr-2 text-blue-500" />
-                <span className="text-lg font-medium text-gray-700">
+        {/* Location Section */}
+        <section>
+          <div className="relative mb-12">
+            <h2 className="text-3xl font-bold text-center text-blue-800">
+              Find Us Here
+              <div className="absolute bottom-0 w-20 h-1 transform -translate-x-1/2 bg-blue-500 left-1/2"></div>
+            </h2>
+          </div>
+          <Card>
+            <CardHeader className="bg-blue-50">
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-6 h-6 text-blue-500" />
+                <Badge variant="secondary" className="py-2 text-lg font-medium">
                   kLab, Telecom House, Kigali, Rwanda
-                </span>
+                </Badge>
               </div>
+            </CardHeader>
+            <CardContent className="p-0">
               <div className="relative w-full h-96">
                 <iframe
                   title="Google Map Location - kLab Kigali"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9570692182385!2d30.085852415112755!3d-1.939467747145516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6eb4b136305%3A0xfa7ecaf4c40f3383!2skLab!5e0!3m2!1sen!2srw!4v1695157308670!5m2!1sen!2srw"
-                  className="w-full h-full border-0"
+                  className="w-full h-full border-0 rounded-b-lg"
                   loading="lazy"
                   allowFullScreen
-                ></iframe>
+                />
               </div>
-            </div>
-          </div>
-        </div>
+            </CardContent>
+          </Card>
+        </section>
       </div>
     </main>
   );
