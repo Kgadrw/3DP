@@ -1,9 +1,9 @@
 import React from "react";
-import servicesData from "../libs/ServicesData";
+import servicesData from "../libs/ServicesData.d";
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-16 bg-blue-100">
+    <section id="services" className="pt-3 pb-10 bg-blue-100">
       <div className="container px-4 mx-auto text-center">
         <h2 className="mb-8 text-4xl font-bold text-blue-800">Our Services</h2>
         <p className="mb-12 text-lg text-gray-700">

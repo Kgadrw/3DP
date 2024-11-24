@@ -44,7 +44,7 @@ const Nav: React.FC<NavProps> = ({
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#122e46] shadow-lg py-8" : "bg-[#122e46]/95 py-8"
+        isScrolled ? "bg-[#122e46] shadow-lg py-3" : "bg-[#122e46]/95 py-3"
       }`}
     >
       <div className="mx-auto flex w-[90%] items-center justify-between">
@@ -52,7 +52,7 @@ const Nav: React.FC<NavProps> = ({
         <Link to="/" className="text-xl font-bold tracking-wider">
           <img
             className={`transition-all duration-300 ${
-              isScrolled ? "h-16" : "h-16"
+              isScrolled ? "h-12" : "h-12"
             } object-fill`}
             src={logo}
             alt="Logo"
