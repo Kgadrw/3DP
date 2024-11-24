@@ -1,5 +1,5 @@
-import React from 'react';
-import servicesData from '../data/ServicesData.d';
+import React from "react";
+import servicesData from "../libs/ServicesData";
 
 const Services: React.FC = () => {
   return (
@@ -7,7 +7,8 @@ const Services: React.FC = () => {
       <div className="container px-4 mx-auto text-center">
         <h2 className="mb-8 text-4xl font-bold text-blue-800">Our Services</h2>
         <p className="mb-12 text-lg text-gray-700">
-          We offer a range of services designed to help your business leverage data and technology effectively.
+          We offer a range of services designed to help your business leverage
+          data and technology effectively.
         </p>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {servicesData.map((service, index) => (
@@ -22,7 +23,9 @@ const Services: React.FC = () => {
                   className="object-cover w-16 h-16 transition-transform duration-300 transform hover:scale-110"
                 />
               </div>
-              <h3 className="mb-2 text-2xl font-semibold text-blue-800">{service.title}</h3>
+              <h3 className="mb-2 text-2xl font-semibold text-blue-800">
+                {service.title}
+              </h3>
               <p className="text-gray-700">{service.description}</p>
             </div>
           ))}
