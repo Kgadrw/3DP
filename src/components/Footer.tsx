@@ -102,17 +102,16 @@ const Footer = () => {
               Contact Us
             </h3>
             <div className="space-y-3 text-gray-300">
-              <p className="flex items-center gap-2">
+              <p className="flex gap-2 items-center">
                 <Mail className="h-5 w-5 text-[#fdb740]" />
                 <a
                   href="mailto:info@datainsights.com"
                   className="hover:text-[#fdb740] transition-colors"
                 >
-                  info@datainsights.com
+                  {/* info@datainsights.com */}
                 </a>
               </p>
               <p>
-                kLab, Telecom House
                 <br />
                 Kigali, Rwanda
               </p>
@@ -127,7 +126,7 @@ const Footer = () => {
           <p>
             © {new Date().getFullYear()}{" "}
             <a
-              href="https://exec-rwanda.com"
+              href="https://data-insights-partners.vercel.app"
               className="hover:text-[#fdb740] transition-colors"
               target="_blank"
               rel="noopener noreferrer"

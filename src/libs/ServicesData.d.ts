@@ -30,17 +30,12 @@ const servicesData = [
     icon: CustomSolutions,
   },
   {
-    title: 'Data Warehousing',
-    description: 'Harness the power of machine learning with our expertly crafted models. We leverage the latest algorithms and technologies to develop predictive and prescriptive models tailored to your specific business needs, enhancing efficiency and innovation.',
-    icon: DataWarehousing,
-  },
-  {
-    title: 'Business Intelligence',
+    title: 'Business Insights',
     description: 'Unlock actionable insights from your data with our Business Intelligence solutions. We help businesses harness the power of data to drive informed decision-making, optimize processes, and achieve strategic objectives.',
     icon: BusinessIntelligence,
   },
   {
-    title: 'Digitization',
+    title: 'Digital Transformation',
     description: 'Transform your business processes and operations with our Digitization services. We help businesses embrace digital technologies to streamline workflows, enhance productivity, and deliver exceptional customer experiences in today\'s digital-first world.',
     icon: Digitization,
   },
@@ -48,12 +43,7 @@ const servicesData = [
     title: 'Data Strategy',
     description: 'Refine your data strategy with our specialized expertise. We customize solutions to harmonize your data goals with business objectives, guaranteeing streamlined management, analysis, and decision-making capabilities.',
     icon: DataStrategy,
-  },
-  {
-    title: 'Big Data',
-    description: 'Providing consulting services to assess and address specific data engineering needs, as well as offering training to empower organizations to manage their data effectively.',
-    icon: BigData,
-  },
+  }
 ];
 
 export default  servicesData
