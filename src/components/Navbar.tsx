@@ -34,7 +34,7 @@ const Nav: React.FC<NavProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.pageYOffset > 50);
+      setIsScrolled(window.pageYOffset > 50); // Toggle scroll state
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -44,22 +44,22 @@ const Nav: React.FC<NavProps> = ({
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#122e46] shadow-lg py-3" : "bg-[#122e46]/95 py-3"
+        isScrolled ? "bg-[#122e46] shadow-lg py-3" : "bg-[#122e46]  py-3" 
       }`}
     >
       <div className="mx-auto flex w-[90%] items-center justify-between">
-        {/* Logo */}
+        
         <Link to="/" className="text-xl font-bold tracking-wider">
           <img
             className={`transition-all duration-300 ${
-              isScrolled ? "h-12" : "h-12"
+              isScrolled ? "h-12" : "h-12" 
             } object-fill`}
             src={logo}
             alt="Logo"
           />
         </Link>
 
-        {/* Hamburger Menu for Mobile */}
+        
         <div className="block lg:hidden">
           <button
             className="flex items-center rounded border-white px-3 py-2 text-white hover:border-[#fdb740] hover:text-[#fdb740]"
@@ -87,7 +87,7 @@ const Nav: React.FC<NavProps> = ({
           </button>
         </div>
 
-        {/* Desktop & Mobile Menu */}
+     
         <div
           className={`${
             isMenuOpen

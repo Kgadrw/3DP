@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Logo from "./assets/IMG-20240921-WA0000.jpg";
+import Logo from "./assets/logo.png";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";

@@ -50,7 +50,7 @@ const Footer = () => {
               to="/" // Use "to" instead of "href"
               className="inline-block text-2xl font-bold bg-gradient-to-r from-[#fdb740] to-yellow-500 bg-clip-text text-transparent"
             >
-              Data & Insights Partners
+              3DP
             </Link>
             <p className="max-w-md text-gray-300">
               Empowering businesses with data-driven insights and innovative
@@ -131,7 +131,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Data & Insights Partners
+              3DP
             </a>
             . All Rights Reserved.
           </p>
