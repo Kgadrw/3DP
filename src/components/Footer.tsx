@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
   const navigationLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
+    { name: "Services", href: "/service" },
     { name: "Data", href: "/data" },
     { name: "Contact", href: "/contact" },
   ];
