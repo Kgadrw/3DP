@@ -52,10 +52,10 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
           <div className="space-y-4 md:col-span-4">
             <Link to="/" className="inline-block">
               <img
-                src= "/Logo.png"
+                src={logo}
                 alt="Company Logo"
                 className="h-12 object-contain"
-                style={{ width: "100px", height: "80px" }}
+                style={{ width: "100px", height: "70px" }}
               />
             </Link>
             <p className="max-w-md text-gray-300">
