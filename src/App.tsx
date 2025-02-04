@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <Route path="/data" element={<PowerBIDashboard />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      <Footer logo={Logo}/>
     </Router>
   );
 };
