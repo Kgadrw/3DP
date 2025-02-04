@@ -1,9 +1,13 @@
 import { Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
 import { Separator } from "../components/ui/separator";
 import { Button } from "../components/ui/button";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+interface FooterProps {
+  logo: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ logo }) => {
   const navigationLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -16,25 +20,25 @@ const Footer = () => {
     {
       name: "Twitter",
       icon: <Twitter className="w-5 h-5" />,
-      href: "#",
+      href: "https://twitter.com/yourprofile",
       color: "text-[#1DA1F2]",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      href: "#",
+      href: "https://www.linkedin.com/in/yourprofile",
       color: "text-[#0A66C2]",
     },
     {
       name: "Instagram",
       icon: <Instagram className="w-5 h-5" />,
-      href: "#",
+      href: "https://www.instagram.com/yourprofile",
       color: "text-[#E4405F]",
     },
     {
       name: "Facebook",
       icon: <Facebook className="w-5 h-5" />,
-      href: "#",
+      href: "https://www.facebook.com/yourprofile",
       color: "text-[#1877F2]",
     },
   ];
@@ -46,11 +50,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12 lg:gap-12">
           {/* Company Info */}
           <div className="space-y-4 md:col-span-4">
-            <Link
-              to="/" // Use "to" instead of "href"
-              className="inline-block text-2xl font-bold bg-gradient-to-r from-[#fdb740] to-yellow-500 bg-clip-text text-transparent"
-            >
-              3DP
+            <Link to="/" className="inline-block">
+              <img
+                src= "/Logo.png"
+                alt="Company Logo"
+                className="h-12 object-contain"
+                style={{ width: "100px", height: "80px" }}
+              />
             </Link>
             <p className="max-w-md text-gray-300">
               Empowering businesses with data-driven insights and innovative
@@ -87,7 +93,7 @@ const Footer = () => {
               {navigationLinks.map((link) => (
                 <Link
                   key={link.name}
-                  to={link.href} // Use "to" for React Router navigation
+                  to={link.href}
                   className="text-gray-300 hover:text-[#fdb740] transition-colors duration-200"
                 >
                   {link.name}
@@ -108,7 +114,7 @@ const Footer = () => {
                   href="mailto:info@datainsights.com"
                   className="hover:text-[#fdb740] transition-colors"
                 >
-                  {/* info@datainsights.com */}
+                  info@datainsights.com
                 </a>
               </p>
               <p>

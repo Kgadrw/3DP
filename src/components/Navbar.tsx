@@ -54,8 +54,10 @@ const Nav: React.FC<NavProps> = ({
             className={`transition-all duration-300 ${
               isScrolled ? "h-12" : "h-12" 
             } object-fill`}
+             style={{ width: "100px",  height: "70px" }}
             src={logo}
             alt="Logo"
+           
           />
         </Link>
 

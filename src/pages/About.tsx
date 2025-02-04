@@ -85,15 +85,15 @@ const AboutPage = () => {
               <div className="flex items-center space-x-2 text-[#122e46]">
                 <MapPin className="w-6 h-6 text-[#fdb740]" />
                 <Badge variant="secondary" className="py-2 text-lg font-medium text-[#122e46]">
-                  kLab, Telecom House, Kigali, Rwanda
+                  Fairview building , Kimihurura , Kigali
                 </Badge>
               </div>
             </CardHeader>
             <CardContent className="p-0">
               <div className="relative w-full h-96">
                 <iframe
-                  title="Google Map Location - kLab Kigali"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9570692182385!2d30.085852415112755!3d-1.939467747145516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6eb4b136305%3A0xfa7ecaf4c40f3383!2skLab!5e0!3m2!1sen!2srw!4v1695157308670!5m2!1sen!2srw"
+                  title="Google Map Location - fairview building  Kigali"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.1312075668257!2d30.09416517442665!3d-1.955277998026998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca764d5aff5a9%3A0xf7fdb32c38a03d20!2sFairView%20Building!5e1!3m2!1sen!2srw!4v1738705416270!5m2!1sen!2srw"
                   className="w-full h-full border-0 rounded-b-lg"
                   loading="lazy"
                   allowFullScreen
