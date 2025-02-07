@@ -4,19 +4,17 @@ import servicesData from "../libs/ServicesData.d";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Services: React.FC = () => {
+  const cardWidth = 280;
+  const visibleSlides = Math.ceil(window.innerWidth / cardWidth);
+  const infiniteSlides = [...servicesData, ...servicesData, ...servicesData];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const cardWidth = 280;
-  const totalSlides = servicesData.length;
-
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    setCurrentIndex((prevIndex) => prevIndex + 1);
   };
 
   const goToPrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides
-    );
+    setCurrentIndex((prevIndex) => prevIndex - 1);
   };
 
   return (
@@ -31,9 +29,9 @@ const Services: React.FC = () => {
           <motion.div
             className="flex w-max gap-8 justify-center"
             animate={{ x: -currentIndex * cardWidth }}
-            transition={{ ease: "easeInOut", duration: 0.5 }}
+            transition={{ ease: "linear", duration: 0.5 }}
           >
-            {servicesData.map((service, index) => (
+            {infiniteSlides.map((service, index) => (
               <div
                 key={index}
                 className="p-6 bg-white rounded-lg shadow-lg w-64 flex-shrink-0 transition-transform duration-300 hover:bg-[#fdb740]"

@@ -20,25 +20,25 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
     {
       name: "Twitter",
       icon: <Twitter className="w-5 h-5" />,
-      href: "https://twitter.com/yourprofile",
+      href: " https://x.com/3dpRwanda ",
       color: "text-[#1DA1F2]",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      href: "https://www.linkedin.com/in/yourprofile",
+      href: "https://www.linkedin.com/company/106318788/admin/dashboard/ ",
       color: "text-[#0A66C2]",
     },
     {
       name: "Instagram",
       icon: <Instagram className="w-5 h-5" />,
-      href: "https://www.instagram.com/yourprofile",
+      href: " https://www.instagram.com/datadrivendecisionpartners/?hl=en",
       color: "text-[#E4405F]",
     },
     {
       name: "Facebook",
       icon: <Facebook className="w-5 h-5" />,
-      href: "https://www.facebook.com/yourprofile",
+      href: " https://www.facebook.com/profile.php?id=61572571655706 ",
       color: "text-[#1877F2]",
     },
   ];
@@ -111,10 +111,10 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
               <p className="flex gap-2 items-center">
                 <Mail className="h-5 w-5 text-[#fdb740]" />
                 <a
-                  href="mailto:info@datainsights.com"
+                  href="mailto:3dp.rwanda@gmail.com "
                   className="hover:text-[#fdb740] transition-colors"
                 >
-                  info@datainsights.com
+                  i3dp.rwanda@gmail.com 
                 </a>
               </p>
               <p>

@@ -10,17 +10,17 @@ const ContactPage: React.FC = () => {
     {
       icon: <MapPin className="w-4 h-4 text-[#fdb740] group-hover:text-[#fdb740]" />,
       title: "Address",
-      content: "123 Main Street, Kigali, Rwanda",
+      content: "Fairview building, Kigali, Rwanda",
     },
     {
       icon: <Mail className="w-4 h-4 text-[#fdb740] group-hover:text-[#fdb740]" />,
       title: "Email",
-      content: "Exec@execrwanda.com",
+      content: "3dp.rwanda@gmail.com ",
     },
     {
       icon: <Phone className="w-4 h-4 text-[#fdb740] group-hover:text-[#fdb740]" />,
       title: "Phone Number",
-      content: "+250 785 842 428",
+      content: " +250785396963",
     },
   ];
 
