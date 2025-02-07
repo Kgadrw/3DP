@@ -4,16 +4,21 @@ import servicesData from "../libs/ServicesData.d";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Services: React.FC = () => {
-  const cardWidth = 280;
-  const infiniteSlides = [...servicesData, ...servicesData, ...servicesData]; // Tripled to avoid gaps
+  const cardWidth = 280 + 16; // Card width + gap
   const [currentIndex, setCurrentIndex] = useState(0);
+  const totalSlides = servicesData.length;
+  const infiniteSlides = [...servicesData, ...servicesData, ...servicesData]; // Duplicate array to create seamless loop
 
+  // Function to scroll next
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => prevIndex + 1);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
   };
 
+  // Function to scroll previous
   const goToPrev = () => {
-    setCurrentIndex((prevIndex) => prevIndex - 1);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides
+    );
   };
 
   return (
