@@ -5,8 +5,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Services: React.FC = () => {
   const cardWidth = 280;
-  const visibleSlides = Math.ceil(window.innerWidth / cardWidth);
-  const infiniteSlides = [...servicesData, ...servicesData, ...servicesData];
+  const infiniteSlides = [...servicesData, ...servicesData, ...servicesData]; // Tripled to avoid gaps
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNext = () => {
