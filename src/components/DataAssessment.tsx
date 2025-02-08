@@ -9,7 +9,7 @@ const DataAssessment: React.FC = () => {
   };
 
   return (
-    <main className="bg-gradient-to-r from-[#122e46] via-[#122e46]/70 to-[#122e46]/80 pt-10">
+    <main className="bg-[#122e46] pt-10">
       <h1 className="px-4 text-2xl text-center text-white sm:text-3xl">
         Where Do You Stand In Data For Your Business?
       </h1>
