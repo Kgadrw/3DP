@@ -10,38 +10,41 @@ import BigData from '../assets/backend.png';
 
 const servicesData = [
   {
-    title: 'Data Analytics',
-    description: 'Transform raw data into actionable insights with our advanced analytics tools and services.',
+    title: 'Data Strategy & Roadmap Development',
+    description: 'We help define your data vision, create a clear strategy, and develop a roadmap for implementation, guiding your business towards a data-driven future.',
     icon: Analytics,
   },
   {
-    title: 'Machine Learning',
-    description: 'Leverage machine learning algorithms to build predictive models and enhance decision-making.',
+    title: 'Business Intelligence (BI) Implementation & Dashboard Development',
+    description: 'We implement BI tools and create customized dashboards to visualize and track key metrics, turning data into actionable insights for better decision-making.',
     icon: MachineLearning,
   },
   {
-    title: 'Consulting',
-    description: 'Receive expert advice and strategies to optimize your data management and technology infrastructure.',
+    title: ' Data Integration & Automation Services',
+
+    description: ' We integrate data from various sources and automate workflows to streamline operations, ensuring seamless data flow across your organization.',
     icon: Consulting,
   },
   {
-    title: 'Custom Solutions',
-    description: 'Get tailor-made software solutions that meet your specific business needs and objectives.',
+    title: 'Advanced Analytics & Predictive Modeling',
+    description: 'We leverage advanced analytics and predictive models to uncover trends and forecast future outcomes, enabling data-driven strategies that enhance performance.',
     icon: CustomSolutions,
   },
   {
-    title: 'Business Insights',
-    description: 'Unlock actionable insights from your data with our Business Intelligence solutions. We help businesses harness the power of data to drive informed decision-making, optimize processes, and achieve strategic objectives.',
+    title: 'Data Governance & Compliance Support',
+    description: 'We establish robust data governance frameworks, ensuring data quality, security, and compliance with industry regulations, safeguarding your business’s data assets',
     icon: BusinessIntelligence,
   },
   {
-    title: 'Digital Transformation',
-    description: 'Transform your business processes and operations with our Digitization services. We help businesses embrace digital technologies to streamline workflows, enhance productivity, and deliver exceptional customer experiences in today\'s digital-first world.',
+    title: 'Training & Data Literacy Programs',
+
+    description: 'We provide hands-on training to enhance your team’s data skills, ensuring your workforce can effectively use data tools and make informed, data-driven decisions.',
+
     icon: Digitization,
   },
   {
-    title: 'Data Strategy',
-    description: 'Refine your data strategy with our specialized expertise. We customize solutions to harmonize your data goals with business objectives, guaranteeing streamlined management, analysis, and decision-making capabilities.',
+    title: 'Data Analytics & Insight Generation',
+    description: 'Our team analyzes your data to uncover valuable insights and trends, providing reports and recommendations that drive strategic decisions.',
     icon: DataStrategy,
   }
 ];

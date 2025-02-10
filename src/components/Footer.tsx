@@ -114,7 +114,7 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
                   href="mailto:3dp.rwanda@gmail.com "
                   className="hover:text-[#fdb740] transition-colors"
                 >
-                  i3dp.rwanda@gmail.com 
+                  3dp.rwanda@gmail.com 
                 </a>
               </p>
               <p>
