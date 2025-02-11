@@ -54,7 +54,7 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
               <img
                 src={logo}
                 alt="Company Logo"
-                className="h-12 object-contain"
+                className="object-contain h-12"
                 style={{ width: "100px", height: "70px" }}
               />
             </Link>
@@ -108,7 +108,7 @@ const Footer: React.FC<FooterProps> = ({ logo }) => {
               Contact Us
             </h3>
             <div className="space-y-3 text-gray-300">
-              <p className="flex gap-2 items-center">
+              <p className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-[#fdb740]" />
                 <a
                   href="mailto:3dp.rwanda@gmail.com "

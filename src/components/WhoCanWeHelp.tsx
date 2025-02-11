@@ -23,8 +23,6 @@ const WhoCanWeHelp: React.FC = () => {
           <motion.article 
             key={index} 
             className="border shadow-md p-3 space-y-3 rounded-md cursor-pointer bg-[#122e46] group hover:bg-[#fdb740]"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: 'spring', stiffness: 200 }}
           >
             <motion.img 
               className="w-7/12 mx-auto"

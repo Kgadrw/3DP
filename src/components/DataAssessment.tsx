@@ -19,8 +19,7 @@ const DataAssessment: React.FC = () => {
   };
 
   return (
-    <main className="bg-[#122e46] pt-10 w-[100%]
-    ">
+    <main className="bg-[#122e46] pt-10">
       <h1 className="px-4 text-2xl text-center text-white sm:text-3xl">
         Where Do You Stand In Data For Your Business?
       </h1>
